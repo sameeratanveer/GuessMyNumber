@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: VT323;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: white;
+    background-color: black;
+}
+
+nav{
+    /* background-color: pink; */
+    width: 100vw;
+    height: 14vh;
+    display: flex;
+    padding: 5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    /* background-color: yellow; */
+    width: 100vw;
+    height : 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12vh;
+}
+
+header h1{
+    font-size: 3em;
+    word-spacing: 2vw;
+}
+
+.line-1{
+    width : 100vw;
+    height : 1vh;
+    background : white;
+    position: relative;
+}
+.box{
+    width : 7vw;
+    height : 14vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left : 45%;
+    top : -6vh;
+}
+.box span{
+    color: black;
+    font-size: 4rem;
+}
+
+main{
+    /* background-color: red; */
+    width: 100vw;
+    flex-grow: 1;
+    display: flex;
+    padding : 0 10vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main>div{
+    width : 100px;
+    height : 50px;
+    border : 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.left input{
+    width : 100px;
+    height : 50px;
+    /* border : none; */
+    padding: 1vh 2vh 1vh 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap : 2vh;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap : 6vh;
+    font-size: 2rem;
+    position: relative;
+}
+.status{
+    position: absolute;
+    top : -8vh;
+    left: -33vw;
+    border: none;
+    font-size: 2rem;
+    /* word-break: keep-all; */
+    white-space: nowrap;
+}
+
+button{
+    /* padding : 5px 18px 5px 18px; */
+    padding : 1vh 5vh 1vh 5vh;
+    font-size: 2rem;
+    height : 8vh;
+    font-family : VT323;
+    font-weight: bold;
+    /* color: white; */
+    cursor: pointer;
+
+}
+
+nav p{
+    font-size: 2rem;
+    /* color : white; */
+}
+.right span, .status p{
+    border-bottom: 2px solid white;
+}
+
+@media (max-width : 600px) {
+    nav{
+        justify-content: space-around;
+        /* background-color: pink; */
+    }
+    nav p{
+        font-size: 1rem;
+        /* color : white; */
+    }
+    header{
+        height: 40vh;
+    }
+    header h1{
+        /* background-color: yellow; */
+        font-size: 2em;
+        word-spacing: 3vw;
+    }
+    .box{
+        width : 15vh;
+        height : 15vh;
+        left : 37%;
+        top : -7vh;
+    }
+    .box span{
+        font-size: 2rem;
+    }
+    main{
+        justify-content: space-evenly;
+        /* background-color: blue; */
+    }
+    .right{
+        font-size: 1.2rem;
+    }
+    .status{
+        top : -15vh;
+        left: -20vw;
+        font-size: 1.6rem;
+        white-space: nowrap;
+    }
+    button{
+        padding : 1vh 3vh 1vh 3vh;
+        font-size: 18px;
+        height : 6vh;
+    
+    }
+
+}
+
+@media(min-width : 601px) and (max-width : 900px) {
+    p{
+        font-size: 2rem;
+    }
+    .box{
+        width : 15vh;
+        left : 40%;
+    }
+    .status{
+        top : -10vh;
+        left: -27vw;
+    }
+    button{
+        font-size: 2rem;  
+    }
+    .box span{
+        font-size: 2.5rem;
+    }   
+    .left input{
+        width : 24vw;
+        height : 6vh;
+    }
+}
